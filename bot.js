@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Initialize your Telegram bot with polling
-const token = '7467223675:AAHyUsuPM-VI51MODMUBeVQ4fy0UGHfJUsw'; // Replace with your bot's token// Replace with your bot's token
+const token = ''; // Replace with your bot's token// Replace with your bot's token
 const bot = new TelegramBot(token, { polling: true });
 
 // Initialize Hercai
