@@ -9,8 +9,14 @@ const url = `https://hercai.onrender.com/v3/hercai?question=${encodeURIComponent
 // Make the Axios GET request
 axios.get(url)
   .then(response => {
-    console.log(response.data.reply);
+    // Check if response data contains 'reply' field
+    if (response.data && response.data.reply) {
+      console.log("Category: " + response.data.reply);
+    } else {
+      console.log("Error: API response doesn't contain expected 'reply' field.");
+    }
   })
   .catch(error => {
+    // Log the error message
     console.error("Error occurred:", error.message);
   });
