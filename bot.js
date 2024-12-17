@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Initialize your Telegram bot with polling
-const token = 'token'; // Replace with your bot's token
+const token = '8096815925:AAFLC_W_WKziB_DRmIZsm5pXyzsqykh27Q8'; // Replace with your bot's token
 const bot = new TelegramBot(token, { polling: true });
 
 const getReply = async (texts) => {
